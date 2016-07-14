@@ -1,0 +1,22 @@
+var text = "Hello sir Richard the third, my name is the great Franz Robert the third. I am having a ball as Sir Robert at this party.";
+var myName = "Robert";
+var hits = [];
+for (var i = 0; i < text.length; i ++)
+  {
+  if(text[i] === "R")
+    {
+      for (var j = i; j < (myName.length + i); j ++)
+      {
+      hits.push(text[j]);
+      }
+    }
+  }
+  
+  if(hits.length === 0)
+  {
+  console.log("Your name wasn't found!");
+  }
+  else
+  {
+  console.log(hits);
+  }
